@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useContext } from 'react'
 import {useParams, useNavigate} from 'react-router-dom'
-import { ecommerceApi } from '../Api/ecommerce'
-import Loader from '../Components/Spinner'
-import DefaultImage from '../assets/img-default.png'
-import Button from '../Components/Button'
+import { ecommerceApi } from '@/Api/ecommerce'
+import Loader from '@/Components/Spinner'
+import DefaultImage from '@/assets/img-default.png'
+import Button from '@/Components/Button'
 import { AuthContext } from '@/Context/Auth.jsx';
 
 export const SingleProduct = () => {
