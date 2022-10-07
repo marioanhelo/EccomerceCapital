@@ -3,9 +3,9 @@ const BASE_URL = 'https://ecomerce-master.herokuapp.com/api/v1'
 
 
 
-const RegisterUser = (data) => axios.post(`${BASE_URL}/signup`, data)
+const RegisterUser = (data) => axios.post(`${BASE_URL}/register`, data)
 const LoginUser = (data) => axios.post(`${BASE_URL}/login`,data)
-const GetUserData = (id) => axios.get(`${BASE_URL}/user/${id}`,{
+const GetUserData = (id) => axios.get(`${BASE_URL}/clients/${id}`,{
     headers: { Authorization: `JWT ${window.sessionStorage.getItem('token')}` }
   })
 const RegisterNewProduct = (data) => axios.post(`${BASE_URL}/item`,data ,{
