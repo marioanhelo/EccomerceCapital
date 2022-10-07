@@ -9,7 +9,7 @@ function ProductProvider (props) {
   const [search, setSearch] = useState('')
 
   const getProductsData = async() => {
-    const res = await ecommerceApi.get('/item')
+    const res = await ecommerceApi.get('/products')
     setProducts(res.data)
     setLoading(false)
   }
